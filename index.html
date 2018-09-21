@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+         #img{
+             width: 100px;
+             height: 100px;
+             border-radius: 50%;
+         }
+    
+    </style>
+    <script>
+     
+      function myover(){    
+        
+            document.getElementById("img").src = "img2.jpg"  
+         
+      }
+      function myout(){    
+         
+            document.getElementById("img").src = "img1.jpg"  
+         
+      }
+      function myclick(){
+            
+            var myp ,input;
+            input =  document.getElementById("input").value 
+            document.getElementById("myp").innerHTML = input
+            
+        }
+    </script>
+</head>
+
+<body>
+    <input id="input" type="text" name="Input">
+    <h3 onclick="myclick()">ChangeText</h3>
+    <p id="myp"></p>
+    <img id="img" onmouseover="myover()" onmouseout="myout()" src="img1.jpg" alt="">
+</body>
+
+</html>
